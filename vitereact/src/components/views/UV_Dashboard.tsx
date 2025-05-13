@@ -25,8 +25,8 @@ const UV_Dashboard: React.FC = () => {
     completedProjects: 0,
     tasksThisWeek: 0
   });
-  // Effect: Sync local search_query with global search query if global changes  useEffect(() => {
-    if (global_search_query !== search_query) {
+  // Effect: Sync local search_query with global search query if global changes
+  useEffect(() => {    if (global_search_query !== search_query) {
       setSearchQuery(global_search_query);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
